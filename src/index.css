@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.categoryDropdown{
+  width:100%;
+  border-radius: 4px;
+  height:35px;
+  border-color:#83ccc5;
+}
+
+.categoryErrMsg{
+  color:red;
+  text-align:left;
+  font-size:14px;
+}
+
+h1{
+  overflow:hidden;
+  text-align: center;
+}
+
+h1:before,
+h1:after{
+  background-color: #000;
+  content:"";
+  display:"inline-block";
+  height:1px;
+  position:relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h1:before{
+  right:0.5em;
+  margin-left:-50%;
+
+
+}
+
+h1:after{
+  left:0.5em;
+  margin-left:-50%;
+
+}
+
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.intro {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.team-member {
+  margin-bottom: 30px;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.searchForm {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.searchForm form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.searchForm .form-control {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+}
+
+.searchForm .form-control:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.searchForm .btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #007bff;
+  border-radius: 0 4px 4px 0;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchForm .btn:hover {
+  background-color: #0056b3;
+}

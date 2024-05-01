@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": "f6ed",
+      "title": "Travel",
+      "description": "Generate a fake United States address complete with street, city, state, zip codes. Be careful though: some of these could end up being real addresses.",
+      "category": "Travel",
+      "imageURL": "http://res.cloudinary.com/dmoir8cz3/image/upload/v1714564234/x3izzmv0ooaifghakfny.jpg",
+      "date": "2024-05-01T11:50:39.998Z"
+    },
+    {
+      "id": "10ec",
+      "title": "Tech",
+      "description": "The sun hung low in the sky, casting long shadows across the deserted street. A gentle breeze rustled the leaves of the trees, carrying with it the scent of freshly cut grass. In the distance, the sound of children playing echoed faintly. As I walked along the sidewalk, I couldn't help but feel a sense of peace wash over me. It was moments like these that made me appreciate the simple joys of life. I took a deep breath, filling my lungs with the crisp, clean air, and let all my worries melt away.",
+      "category": "Tech",
+      "imageURL": "http://res.cloudinary.com/dmoir8cz3/image/upload/v1714567458/gdbgrs2jxchzprjmkcj9.jpg",
+      "date": "2024-05-01T12:44:20.912Z"
+    },
+    {
+      "id": "8add",
+      "title": "NewBlog",
+      "description": "The blogs are good",
+      "category": "Tech",
+      "imageURL": "http://res.cloudinary.com/dmoir8cz3/image/upload/v1714575761/vaumfrxcli4yg4hp5ngz.jpg",
+      "date": "2024-05-01T15:03:08.131Z"
+    }
+  ]
+}
