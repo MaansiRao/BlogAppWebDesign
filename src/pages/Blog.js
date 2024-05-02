@@ -24,6 +24,7 @@ const Blog = () => {
  
   useEffect(() => {
     const getSingleBlog = async () => {
+      console.log("hi")
       try {
         const response = await axios.get(`http://localhost:5000/blogs/${id}`);
         const relatedPostData=await axios.get(`http://localhost:5000/blogs?category=${response.data.category}&_start=0&_end=3`);

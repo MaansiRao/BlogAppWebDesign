@@ -1,102 +1,3 @@
-
-// import React from 'react'
-// import {useState} from 'react';
-// import { MDBValidation,MDBInput,MDBBtn } from 'mdb-react-ui-kit';
-// import axios from 'axios';
-// import {useNavigate} from "react-router-dom";
-// import {toast} from "react-toastify";
-// //qgvl3ds1
-// const initialState={
-//     title:"",
-//     description:"",
-//     category:"",
-//     imageURL:""
-// }
-// const options=["Travel","Fashion","Fitness","Sports","Food","Tech"];
-// const handleSubmit=(e)=>{};
-// const onInputChange=(e)=>{};
-
-// const onUploadImage=(file)=>{
-//     console.log("file",file);
-//     setFormValue({ ...formValue, imageURL: file.name });
-   
-// };
-
-// const onCategoryChange=()=>{};
-
-// const AddEditBlog = () => {
-//     const [formValue,setFormValue]=useState(initialState);
-//     const [categoryErrMsg,setCategoryErrMsg]=useState(null);
-//     const {title,description,category,imageUrl}=formValue;
-//     const navigate=useNavigate();
-//   return (
-//     <MDBValidation className="row g-3" style={{marginTop:"100px"}} noValidate onSubmit={handleSubmit}  >
-//         <p className='fs-2 fw-bold'>Add Blog</p>
-//         <div
-//             style={{
-//                 margin:"auto",
-//                 padding:"15px",
-//                 maxWidth:"400px",
-//                 alignContent:"centre",
-
-//             }}>
-//             <MDBInput
-//                 value={title || ""}
-//                 name="title"
-//                 type="text"
-//                 onChange={onInputChange}
-//                 required
-//                 label="Title"
-//                 validation='please provide a title'
-//                 invalid />
-//             <br/>
-//             <MDBInput
-//                 value={description || ""}
-//                 name="description"
-//                 type="text"
-//                 onChange={onInputChange}
-//                 required
-//                 label="Description"
-//                 validation='please provide a description'
-//                 textarea
-//                 rows={4}
-//                 invalid />
-//             <br/>
-//             <MDBInput
-//                 value={title}
-//                 name="imageURL"
-//                 type="file"
-//                 onChange={(e)=>onUploadImage(e.target.files[0])}
-//                 required
-                
-//                 //validation='please provide a title'
-//                 invalid />
-//             <br/>
-            
-//             <select className='categoryDropdown'  onChange={onCategoryChange} value={category}>
-//                 <option>Please select category</option>
-//                 {options.map((option,index)=>(
-//                     <option value={option || ""} key={index} >
-//                         {option}
-//                         </option>
-//                 ))}
-
-//             </select>
-//             <br/>
-//             <br />
-//             <MDBBtn type="submit" style={{marginRight:"10px"}}>Add</MDBBtn>
-//             <MDBBtn color="danger" style={{marginRight:"10px"}} onClick={()=>navigate("/")}>Go Back</MDBBtn>
-            
-
-
-            
-//         </div>
-
-//     </MDBValidation>
-//   )
-// }
-
-// export default AddEditBlog
 import React, { useState, useEffect } from 'react';
 
 import { MDBValidation, MDBInput, MDBBtn } from 'mdb-react-ui-kit';
@@ -158,7 +59,7 @@ const AddEditBlog = () => {
         e.preventDefault();
         if (!category) {
             setCategoryErrMsg("Please select a category");
-            return; // Prevent form submission if category is not selected
+            return; 
         }
         const imageValidation=!editMode? imageURL:true;
         if (title && description && category && imageURL) {

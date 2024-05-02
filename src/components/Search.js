@@ -6,7 +6,7 @@ const Search = ({ handleSearch, searchValue, onInputChange }) => {
         <div className='searchForm'>
             <form className='d-flex' onSubmit={handleSearch}>
                 <input type="text" className='form-control' placeholder='Search Blog' value={searchValue} onChange={onInputChange}/>
-                <MDBBtn color='primary' type='submit'>Search</MDBBtn> {/* Typo fixed */}
+                <MDBBtn color='primary' type='submit'>Search</MDBBtn> 
             </form>
         </div>
     );

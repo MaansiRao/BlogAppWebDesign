@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MDBCol, MDBCard, MDBCardTitle, MDBCardBody, MDBCardImage, MDBCardText, MDBBtn, MDBIcon } from "mdb-react-ui-kit";
@@ -24,7 +23,6 @@ const Blogs = ({ title, category, description, id, imageURL, excerpt, handleDele
                 <MDBIcon icon="edit" />
               </MDBBtn>
             </Link>
-            
           </div>
           </span>
         </MDBCardBody>

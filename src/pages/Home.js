@@ -63,7 +63,7 @@ const Home = () => {
     };
 
     return (
-        <div>
+        <div className='home_bg'>
             <Search searchValue={searchValue} onInputChange={onInputChange} handleSearch={handleSearch}/>
             <MDBRow>
                 {data.length === 0 && (

@@ -57,7 +57,11 @@ h1:after{
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: sans-serif, Arial ;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
 }
 
 .intro {
@@ -118,4 +122,8 @@ h1:after{
 
 .searchForm .btn:hover {
   background-color: #0056b3;
+}
+
+.home_bg{
+  background-color: gray;
 }
